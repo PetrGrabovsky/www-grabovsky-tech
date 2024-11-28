@@ -17,6 +17,7 @@
     "security/detect-buffer-noassert": "warn",
     "security/detect-child-process": "warn",
     "unicorn/prefer-query-selector": "error",
+    "unicorn/no-null": "off",
     "unicorn/no-array-callback-reference": "warn",
     "unicorn/filename-case": [
       "error",
