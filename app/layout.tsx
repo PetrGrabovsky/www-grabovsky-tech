@@ -4,6 +4,7 @@ import clsx from 'clsx';
 import { PropsWithChildren } from 'react';
 
 import ClientLayout from '@/layout/components/ClientLayout';
+import { inter } from '@/shared/styles/fonts';
 
 const RootLayout = ({ children }: PropsWithChildren) => {
   return (
@@ -11,7 +12,8 @@ const RootLayout = ({ children }: PropsWithChildren) => {
       <body
         className={clsx(
           'flex min-h-screen w-full flex-col bg-body-background bg-white-carbon',
-          'overflow-x-hidden antialiased'
+          'overflow-x-hidden antialiased',
+          inter.className
         )}
       >
         <ClientLayout>{children}</ClientLayout>
