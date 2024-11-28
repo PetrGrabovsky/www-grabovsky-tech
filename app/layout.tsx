@@ -3,6 +3,8 @@ import '@/shared/styles/globals.css';
 import clsx from 'clsx';
 import { PropsWithChildren } from 'react';
 
+import ClientLayout from '@/layout/components/ClientLayout';
+
 const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <html lang='cs'>
@@ -12,7 +14,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
           'overflow-x-hidden antialiased'
         )}
       >
-        {children}
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );
