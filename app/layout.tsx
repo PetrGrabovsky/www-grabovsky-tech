@@ -1,4 +1,4 @@
-import './globals.css';
+import '@/shared/styles/globals.css';
 
 import clsx from 'clsx';
 import { PropsWithChildren } from 'react';
