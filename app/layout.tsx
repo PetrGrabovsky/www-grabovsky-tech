@@ -1,15 +1,19 @@
 import './globals.css';
 
-import { ReactNode } from 'react';
+import clsx from 'clsx';
+import { PropsWithChildren } from 'react';
 
-interface RootLayoutProperties {
-  children: ReactNode;
-}
-
-const RootLayout = ({ children }: RootLayoutProperties) => {
+const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <html lang='cs'>
-      <body className='antialiased'>{children}</body>
+      <body
+        className={clsx(
+          'flex min-h-screen w-full flex-col bg-body-background bg-white-carbon',
+          'overflow-x-hidden antialiased'
+        )}
+      >
+        {children}
+      </body>
     </html>
   );
 };
