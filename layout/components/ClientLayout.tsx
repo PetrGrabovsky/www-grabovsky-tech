@@ -1,8 +1,11 @@
+'use client';
+
 import { PropsWithChildren } from 'react';
 
 import Logo from '@/shared/components/Logo';
 
 import Header from './Header';
+import Main from './Main';
 
 const ClientLayout = ({ children }: PropsWithChildren) => {
   return (
@@ -10,7 +13,7 @@ const ClientLayout = ({ children }: PropsWithChildren) => {
       <Header>
         <Logo />
       </Header>
-      <main className='mb-12 mt-28 w-full flex-grow'>{children}</main>
+      <Main>{children}</Main>
       <footer className='h-10 w-full bg-neutral-900 bg-opacity-50'>Footer</footer>
     </>
   );

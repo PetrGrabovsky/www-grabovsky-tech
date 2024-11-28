@@ -6,7 +6,7 @@ const Header = ({ children }: PropsWithChildren) => {
     <header
       className={clsx(
         'fixed inset-0 h-16 w-full border-b border-neutral-900 bg-neutral-950 bg-opacity-30',
-        'py-2'
+        'z-50 py-2'
       )}
     >
       <div className='container h-full w-full'>{children}</div>
