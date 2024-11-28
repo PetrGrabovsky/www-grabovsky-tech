@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss';
+import plugin from 'tailwindcss/plugin';
 
 export default {
   content: ['./app/**/*.{ts,tsx}', './layout/**/*.{ts,tsx}', './shared/**/*.{ts,tsx}'],
@@ -26,5 +27,19 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        '.mask-size': {
+          maskSize: '100% 100%',
+        },
+        '.mask-repeat': {
+          maskRepeat: 'no-repeat',
+        },
+        '.will-change-mask': {
+          willChange: 'mask-position',
+        },
+      });
+    }),
+  ],
 } satisfies Config;
