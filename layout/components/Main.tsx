@@ -12,7 +12,7 @@ const Main = ({ children }: PropsWithChildren) => {
       ref={mainReference}
       className='w-full flex-grow pb-12 pt-28 mask-size mask-repeat will-change-mask'
       style={{
-        maskImage: 'linear-gradient(to bottom, transparent 64px, black 150px, black 100%)',
+        maskImage: 'linear-gradient(to bottom, transparent 32px, black 150px, black 100%)',
       }}
     >
       {children}
