@@ -24,7 +24,7 @@ const MenuIcon = ({ isCross = false }: MenuIconProperties) => {
       animate={isCross ? 'cross' : 'grid'}
       className={clsx(
         'h-full w-auto fill-current transition-colors duration-300 ease-in-out',
-        isCross ? 'text-red-500' : 'text-neutral-400'
+        isCross ? 'text-red-500' : 'text-neutral-200'
       )}
       initial='grid'
       transition={springTransition}

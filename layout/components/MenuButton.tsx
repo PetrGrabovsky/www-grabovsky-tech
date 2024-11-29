@@ -8,7 +8,7 @@ interface MenuButtonProperties extends HTMLAttributes<HTMLElement> {
 
 const MenuButton = ({ isNavOpen, onClick }: MenuButtonProperties) => {
   return (
-    <div className='h-full w-auto py-2'>
+    <div className='h-full w-auto py-3'>
       <button className='h-full w-auto' onClick={onClick}>
         <MenuIcon isCross={isNavOpen} />
       </button>
