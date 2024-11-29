@@ -9,7 +9,7 @@ const Header = ({ children }: PropsWithChildren) => {
         'z-50 py-2'
       )}
     >
-      <div className='container h-full w-full'>{children}</div>
+      <div className='container flex h-full w-full justify-between'>{children}</div>
     </header>
   );
 };
